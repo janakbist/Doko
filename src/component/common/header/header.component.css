@@ -1,0 +1,15 @@
+.nav_bar{
+    height: 40px;
+    background-color: blueviolet
+    
+}
+.nav_list {
+    list-style-type: none;
+
+}
+.nav_item{
+    float: left;
+    padding: 10px;
+    color: white;
+
+}
