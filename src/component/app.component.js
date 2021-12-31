@@ -1,5 +1,6 @@
 import React  from 'react';
 import { Login } from './Auth/login/login.component.js';
+import { Register } from './Auth/register/register.component.js';
 import {Header} from './common/header/header.component.js';
 
 export const App = () => {
@@ -7,8 +8,9 @@ export const App = () => {
     <div>
 
         <Header isLoggedIn = {true}></Header>
-        <Header isLoggedIn={false}></Header>
-        <Login></Login>
+        {/*<Header isLoggedIn={false}></Header>*/}
+        {/*<Login></Login>*/}
+        <Register></Register>
         <p>Welcome</p>
         <p>React</p>
         

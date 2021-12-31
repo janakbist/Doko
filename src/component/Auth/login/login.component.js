@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from '../../common/button/button.component';
 
 export class Login extends React.Component{
     
@@ -9,7 +10,7 @@ export class Login extends React.Component{
             password:'',
             remember_me:false,
             isSubmitting:false,
-            isValidForm:false,
+            isValidForm:true,
         };
     }
     handleChange = (e) => {
@@ -27,15 +28,10 @@ export class Login extends React.Component{
             this.setState({
                 isSubmitting:false
             })
-        },4000)
+        },3000)
         console.log("this.state is >>",this.state);
     }
     render() {
-        let btn = this.state.isSubmitting
-        ? <button disabled className="btn btn-info">Logging...</button>
-
-        : <button type="submit" className="btn btn-primary">Login</button>
-
                       
         return(
             <div>
@@ -45,9 +41,11 @@ export class Login extends React.Component{
                     <label htmlFor="username">Username</label>
                     <input type="text" name="username"id="username"placeholder="Enter Your Name" className="form-control" onChange={this.handleChange}></input>
                     <label htmlFor="password">Password</label>
-                    <input type="password"name="password"id="password" className="form-control" onChange={this.handleChange}></input><br></br>
-                    <button type="submit" className="btn btn-primary">Login</button><br/>
-                    {btn}
+                    <input type="password"name="password"id="password" className="form-control" onChange={this.handleChange}></input><br />
+                    <Button
+                        isSubmitting = {this.state.isSubmitting}
+                        isValidForm = {this.state.isValidForm}
+                    ></Button>
                 </form>
             </div>
         )
