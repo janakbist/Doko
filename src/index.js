@@ -1,5 +1,8 @@
 import React from 'react';
-import ReactDom from  'react-dom';
-import {App} from './component/app.component';
+import ReactDOM from 'react-dom';
+import { App } from './components/app.component';
 
-ReactDom.render(<App></App>,document.getElementById('root'));
+// content
+// content will be supplied from root component file
+
+ReactDOM.render(<App></App>, document.getElementById('root'));

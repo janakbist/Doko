@@ -1,0 +1,27 @@
+.error{
+    color: red;
+}
+
+.nav_bar{
+    margin-left: 160px;
+    height: 40px;
+    background-color: blueviolet;
+}
+
+.side_bar{
+    width: 150px;
+    height: 100%;
+    background-color: blueviolet;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+.main_content{
+    margin-top: 50px;
+    margin-left: 160px;
+}

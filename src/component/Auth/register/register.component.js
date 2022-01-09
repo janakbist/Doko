@@ -58,7 +58,7 @@ const defaultForm = {
                      ></Button>
                  </form>
                  <p>Already Registerred</p>
-                 <p>Back to <a href="/">Login</a></p>
+                 <p>Back to <a href="">Login</a></p>
              </div>
          )
      }

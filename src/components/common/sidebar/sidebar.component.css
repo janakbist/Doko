@@ -1,0 +1,20 @@
+
+
+.side_bar a{
+    padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color:white;
+        display: block;
+    }
+
+.side_bar a:hover{
+    color: brown;
+
+    }
+
+
+.side_bar a:active{
+    font-weight: bold;
+
+    }

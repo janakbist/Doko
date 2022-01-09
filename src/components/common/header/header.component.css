@@ -1,0 +1,22 @@
+
+.nav_list{
+    list-style-type: none;
+}
+
+.nav_item a{
+    float: left;
+    padding: 10px;
+    color:white;
+    text-decoration: none;
+}
+.nav_item a:hover{
+    color: brown;
+}
+.nav_item a:active{
+    font-weight: bold;
+}
+
+.logout{
+    float: right;
+    margin-right: 10px;
+}
